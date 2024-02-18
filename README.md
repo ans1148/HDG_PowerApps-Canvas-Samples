@@ -1,7 +1,8 @@
 # HDG_PowerApps-Canvas-Samples
 
-
 ## Custom notification
+
+![Custom notification](img/CustomNotiPowerApps.png)
 
 ### Custom property
 
@@ -43,3 +44,15 @@
 (Output)
 1. NotificationHeight - number : Set notification height. Default value is (Notification count) * 109
 
+If you want to make notification, make button and set to OnSelect like below code.
+
+<pre>
+    <code>
+        Set(varNotificationMessage, txtMessage.Text); Set(varNotificationType, Component1_1.NotificationTypes.Info); Set(varNotification, !varNotification);
+    </code>
+</pre>
+
+And set variable on component like below.
+- AlertMessage : varNotificationMessage
+- InsertNotification : varNotification
+- NotificationType : varNotificationType
